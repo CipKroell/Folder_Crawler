@@ -1,4 +1,4 @@
-# Folder_Crawler
+# Folder Crawler
 Software to calculate the space ocupied by files and folders
 
 I created this thing to calculate the space ocupied by all my games and software setups on my hard drives, now it also reads information on OneDrive. 
