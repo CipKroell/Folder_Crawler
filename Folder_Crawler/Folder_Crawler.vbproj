@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36B253B3-AF5C-46B4-8E43-25ACA2836FA3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Folder_Crawler.My.MyApplication</StartupObject>
+    <RootNamespace>Folder_Crawler</RootNamespace>
+    <AssemblyName>Folder_Crawler</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Folder_Crawler.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Folder_Crawler.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ListViewComparer.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RoundProgress.designer.vb">
+      <DependentUpon>RoundProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RoundProgress.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundProgress.resx">
+      <DependentUpon>RoundProgress.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aiff.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\All Compressed Files.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bat.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\com.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\css.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dll.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font-ttf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ini.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iso.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jpeg.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mds.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\midi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mov.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mp3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mp4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpg.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogg.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Other fonts.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\php.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sys.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wav.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wma.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wmv.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
